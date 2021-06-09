@@ -1,0 +1,138 @@
+/* ESTILOS PRINCIPALES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    height: 100%;
+}
+
+:root {
+    --white: #ffffff;
+    --richblack-banner: #141D29;
+    --colorVerde: #8ED243;
+    --gray_dark:#68696C;
+    --gray_main:#9B9B9B;
+    --blue-light-lightgradient:#0784BA;
+}
+
+/* --------------------------------- */
+/* 
+ESTILOS HEADER PRINCIPAL */
+.headerPrincipal {
+    background-color: var(--richblack-banner);
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.headerPrincipal h2,
+span {
+    color: var(--white);
+    margin-right: 3%;
+}
+
+.headerPrincipal h2 {
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.headerPrincipal span {
+    font-size: 1em;
+}
+
+/* ------------------------------- */
+
+/* ESTILOS MAIN  */
+main{
+    width: 100%;
+    height: 500px;
+    background: #F1F0EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ------------------------ */
+
+/* ESTILOS NAV */
+.contenedorNav{
+    width: 85%;
+    margin-top: 35px;
+    padding: 10px 0;
+    border-bottom: 0.5px solid var(--gray_main);
+}
+.contenedorNav nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.contenedorNav nav ul li{
+    font-size: 16px;
+    list-style:none;
+    color: var(--gray_dark);
+    cursor: pointer;
+
+}
+.contenedorNav nav ul li:hover{
+    text-decoration-line: underline;
+    /* border-bottom: 1px solid var(--blue-light-lightgradient); */
+    color: var(--blue-light-lightgradient);
+}
+
+/* ESTILOS CONTENEDORES */
+.contenedores{
+    width: 85%;
+    height: 223px;
+    background-color: var(--white);
+    margin-top: 40px;
+}
+
+
+
+
+/* 
+ESTILOS FOOTER */
+footer {
+    background-color: var(--white);
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 0px #0000001F;
+}
+
+footer .botonFooter {
+    width: 79px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: var(--colorVerde);
+    color: var(--white);
+    font-size: 0.875em;
+    margin-right: 6.5%;
+
+}
+/* ----------------------- */
+
+@media (max-width: 650px) {
+/* body{
+    display: none;
+} */
+}

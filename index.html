@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,43 @@
     <link rel="stylesheet" href="./assets/css/estilos.css">
     <title>Fenix</title>
 </head>
+
 <body>
-    
+    <header class="headerPrincipal">
+        <h2>Sincosoft</h2>
+        <span> Nombre Usuario</span>
+    </header>
+    <main>
+        <div class="contenedorNav">
+            <nav>
+                <ul>
+                    <li class="links"> Usuarios </li>
+                    <li class="links"> Nóminas</li>
+                    <li class="links">Roles</li>
+                </ul>
+            </nav>
+        </div>
+        <section class="contenedores nuevoRol">
+            <div class="tituloContenedor">
+                <h2>Crear nuevo rol</h2>
+            </div>
+            <div class="informacionContenedor">
+                <h3>Nombre y Empresa</h3>
+                <form >
+                    <label for="nombre">Nombre de rol</label>
+                    <input type="text" name="nombre">
+                    <label for="empresa">Empresa</label>
+                    <select name="empresa" >
+                        <option value="1">Sincosoft</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="botonFooter">Crear rol</button>
+    </footer>
+
 </body>
+
 </html>
