@@ -29,8 +29,8 @@ body {
     --blue_text: #1A344C;
     --orange_main: #E49718;
     --gray-border: #E8E8E8;
-    --blue_dark:#1B344C;
-    --gray_form:#F7F8F9;
+    --blue_dark: #1B344C;
+    --gray_form: #F7F8F9;
 }
 
 /* --------------------------------- */
@@ -110,6 +110,7 @@ ul li {
 
 /* ESTILOS CONTENEDORES */
 .contenedores {
+    margin-bottom: 38px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -117,14 +118,17 @@ ul li {
 }
 
 .contenedor {
-    width: 83%;
+    width: 85%;
     background-color: var(--white);
-    padding-left: 2%;
+}
 
+.margenContenedor {
+    margin-left: 2%;
 }
 
 /* CONTENEDOR NUEVO ROL */
 .nuevoRol {
+
     height: 223px;
     margin-top: 40px;
 }
@@ -163,11 +167,8 @@ ul li {
 }
 
 .contenedorInput input {
-
     background-color: var(--cultured-background);
-
     border-bottom: 1px solid var(--orange_main);
-
 }
 
 .contenedorInput input,
@@ -175,17 +176,18 @@ select {
     height: 33px;
     margin-top: 11px;
     border-radius: 4px;
+    padding: 0 5%;
 }
 
 .contenedorInput select {
     border: .6px solid var(--gray_main);
     color: var(--gray_main);
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .contenedorInput label {
     color: var(--gray_dark);
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .empresa {
@@ -199,10 +201,9 @@ SELECCIONAR PERMISOS */
 }
 
 .navPermisos {
-    width: 100%;
+    width: 98%;
     height: 76px;
     display: flex;
-
     align-items: center;
 }
 
@@ -250,106 +251,127 @@ SELECCIONAR PERMISOS */
 }
 
 /* SECCIONES DE PAGOS */
-.seccionesPagos{
+.seccionesPagos {
     width: 100%;
-}
-.seccionesPagos .headerSecciones{
-width: 100%;
-height: 72px;
+    margin-bottom: 48px;
 }
 
-/* SECCION LIQUIDAR */
-.seccionLiquidar .headerLiquidar{
-    background-color: var(--blue-light-lightgradient);
+.seccionesPagos .headerSecciones {
+
+    width: 100%;
+    height: 72px;
+
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
 }
-.tituloLiquidar{
+
+
+/* SECCION LIQUIDAR */
+
+.tituloSeccionesPago {
     font-size: 1.125em;
     font-weight: bold;
 }
-.parrafoLiquidar{
+
+.parrafoSeccionesPago {
     font-size: 0.875em;
 }
-.tituloLiquidar, .parrafoLiquidar {
+
+.tituloSeccionesPago,
+.parrafoSeccionesPago {
     color: var(--white);
     margin-left: 4%;
 }
 
 /* SECCION LIQUIDAR CONSULTA DE EMPLEADOS */
-.seccionesLiquidar{
+.divsSectionPago {
     margin-top: 48px;
     margin-left: 4%;
 }
-.seccionesLiquidar header{
-display: flex;
-width: 95.6%;
+
+.divsSectionPago header {
+    display: flex;
+    width: 95.6%;
 }
-.headerTexto{
+
+.headerTexto {
     display: flex;
     justify-content: space-between;
     width: 100%;
     border-bottom: 2px dashed var(--gray_main);
     margin-left: 2%;
 }
-.textoPrincipal{
+
+.textoPrincipal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
 }
-.textoPrincipal h4{
+
+.textoPrincipal h4 {
     font-size: 1.125em;
     font-weight: bold;
 }
-.textoPrincipal p{
+
+.textoPrincipal p {
     font-size: 0.75em;
 }
-.textoPrincipal h4,p{
+
+.textoPrincipal h4,
+p {
     color: var(--blue_dark);
     margin: 2px 0;
 }
-.seleccionarDeshacer{
+
+.seleccionarDeshacer {
     margin-top: 30px;
 }
-.seleccionarDeshacer span{
-    
+
+.seleccionarDeshacer span {
+
     padding: 0 10px;
-font-size: 0.75em;
-color: var(--gray_main);
+    font-size: 0.75em;
+    color: var(--gray_main);
 
 }
 
 /* CONTENEDOR CHECKBOX */
-.contenedorSeleccionar{
+.contenedorSeleccionar {
     display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 14.7% 14.7% 14.7% 14.7% 14.7% 14.7% ;
- margin-top: 23.5px;
+    grid-gap: 1rem;
+    grid-template-columns: 14.7% 14.7% 14.7% 14.7% 14.7% 14.7%;
+    margin-top: 23.5px;
 }
-.contenedorCheckbox{
+
+.contenedorCheckbox {
     background-color: var(--gray_form);
-    height: 61px;
+    padding: 20px 0;
+    
     display: flex;
     align-items: center;
-    
+
     border-radius: 4px;
 }
-.contenedorCheckbox label{
+
+.contenedorCheckbox label {
     width: 40%;
     margin-left: 10%;
     font-size: 0.75em;
     color: var(--gray_dark);
 }
-.contenedorCheckbox input{
+
+.contenedorCheckbox input {
     margin-left: 28%;
 }
-.colorEmpleado{
+
+.colorEmpleado {
     background-color: var(--blue-light-lightgradient);
-   
+
 }
-.colorLabel{
+
+.colorLabel {
     color: var(--blue-light-lightgradient);
 }
 
@@ -359,7 +381,7 @@ footer {
     background-color: var(--white);
     width: 100%;
     height: 57px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
